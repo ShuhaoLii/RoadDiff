@@ -97,7 +97,7 @@ def generate_train_val_test(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--output_dir", type=str, default="../Datasets/HuaNan/Flow/Lane", help="Output directory.")
-    parser.add_argument("--traffic_df_filename", type=str, default="../Datasets/HuaNan_lane_flow_15d_72.csv", help="Raw traffic readings.",)
+    parser.add_argument("--traffic_df_filename", type=str, default="../Datasets/", help="Raw traffic readings.",)
     parser.add_argument("--seq_length_x", type=int, default=12, help="Sequence Length.",)
     parser.add_argument("--seq_length_y", type=int, default=12, help="Sequence Length.",)
     parser.add_argument("--y_start", type=int, default=1, help="Y pred start", )
